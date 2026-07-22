@@ -1,52 +1,57 @@
 <script setup lang="ts">
 import { Github } from "lucide-vue-next";
+import AboutSection from "./components/AboutSection.vue";
 import AppHeader from "./components/AppHeader.vue";
 </script>
 
 <template>
   <AppHeader />
 
-  <main id="top" class="hero">
-    <div class="hero__background">
-      <div class="hero__blur hero__blur--1"></div>
-      <div class="hero__blur hero__blur--2"></div>
-      <div class="hero__blur hero__blur--3"></div>
-    </div>
-    <div class="hero__container">
-      <span class="hero__eyebrow"> 👋 Hello, I'm </span>
-
-      <h1 class="hero__title">山本 和明</h1>
-
-      <p class="hero__subtitle">Web Application Engineer</p>
-
-      <div class="hero__tech">
-        <span>Laravel</span>
-        <span>Vue</span>
-        <span>Nuxt</span>
-        <span>TypeScript</span>
-        <span>Docker</span>
+  <main>
+    <section id="top" class="hero">
+      <div class="hero__background">
+        <div class="hero__blur hero__blur--1"></div>
+        <div class="hero__blur hero__blur--2"></div>
+        <div class="hero__blur hero__blur--3"></div>
       </div>
+      <div class="hero__container">
+        <span class="hero__eyebrow"> 👋 Hello, I'm </span>
 
-      <p class="hero__description">
-        Laravel・Vue・Nuxtを用いたWebアプリケーション開発を行っています。<br />
-        使いやすさと保守性を大切に、企画からデプロイまで一貫して取り組んでいます。
-      </p>
+        <h1 class="hero__title">山本 和明</h1>
 
-      <div class="hero__actions">
-        <a href="#projects" class="btn btn-primary"> 制作物を見る </a>
+        <p class="hero__subtitle">Web Application Engineer</p>
 
-        <a
-          href="https://github.com/kazyuaki"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-secondary"
-        >
-          <Github :size="18" />
-          GitHub
-        </a>
+        <div class="hero__tech">
+          <span>Laravel</span>
+          <span>Vue</span>
+          <span>Nuxt</span>
+          <span>TypeScript</span>
+          <span>Docker</span>
+        </div>
+
+        <p class="hero__description">
+          Laravel・Vue・Nuxtを用いたWebアプリケーション開発を行っています。<br />
+          使いやすさと保守性を大切に、企画からデプロイまで一貫して取り組んでいます。
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn-primary"> 制作物を見る </a>
+
+          <a
+            href="https://github.com/kazyuaki"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary"
+          >
+            <Github :size="18" />
+            GitHub
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="hero__scroll">Scroll ↓</div>
+      <a class="hero__scroll" href="#about">Scroll ↓</a>
+    </section>
+
+    <AboutSection />
   </main>
 </template>
 
