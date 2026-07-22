@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { Github } from "lucide-vue-next";
+import AppHeader from "./components/AppHeader.vue";
 </script>
 
 <template>
-  <main class="hero">
+  <AppHeader />
+
+  <main id="top" class="hero">
     <div class="hero__background">
       <div class="hero__blur hero__blur--1"></div>
       <div class="hero__blur hero__blur--2"></div>
@@ -65,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 24px;
+  padding: 112px 24px 80px;
   overflow: hidden;
   background: #f8fafc;
 }
@@ -241,7 +244,7 @@ body {
 @media (max-width: 640px) {
   .hero {
     min-height: 100svh;
-    padding: 64px 20px 96px;
+    padding: 104px 20px 96px;
   }
 
   .hero__title {
