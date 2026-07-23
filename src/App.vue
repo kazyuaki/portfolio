@@ -2,6 +2,7 @@
 import { Github } from "lucide-vue-next";
 import AboutSection from "./components/AboutSection.vue";
 import AppHeader from "./components/AppHeader.vue";
+import SkillsSection from "./components/SkillsSection.vue";
 </script>
 
 <template>
@@ -52,6 +53,7 @@ import AppHeader from "./components/AppHeader.vue";
     </section>
 
     <AboutSection />
+    <SkillsSection />
   </main>
 </template>
 
