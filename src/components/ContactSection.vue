@@ -35,6 +35,7 @@ const currentYear = new Date().getFullYear();
 
         <nav aria-label="フッターナビゲーション">
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
         </nav>
